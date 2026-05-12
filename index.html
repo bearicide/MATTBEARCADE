@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MATTBEARCADE</title>
+<meta name="description" content="MATTBEARCADE game portal for MATTBEAR / Bearicide GitHub games." />
+<style>
+:root{
+  --bg:#080a10;
+  --panel:rgba(255,255,255,.08);
+  --text:#f8fbff;
+  --muted:#c7cedf;
+  --line:rgba(255,255,255,.16);
+  --pink:#ff3a86;
+  --orange:#ff9f1c;
+  --yellow:#ffe14d;
+  --green:#39ff92;
+  --cyan:#35d9ff;
+  --blue:#6d7cff;
+  --violet:#cf5cff;
+  --grad:linear-gradient(90deg,var(--pink),var(--orange),var(--yellow),var(--green),var(--cyan),var(--blue),var(--violet));
+  --shadow:0 22px 55px rgba(0,0,0,.42);
+  --radius:26px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:Bahnschrift,"Arial Narrow",Arial,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 12% 5%,rgba(255,58,134,.25),transparent 30%),
+    radial-gradient(circle at 88% 12%,rgba(53,217,255,.23),transparent 28%),
+    radial-gradient(circle at 50% 100%,rgba(57,255,146,.16),transparent 32%),
+    linear-gradient(180deg,#080a10 0%,#121725 52%,#080a10 100%);
+}
+a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 28px));margin:0 auto}.topbar{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px);background:rgba(8,10,16,.88);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0}.logo{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.08em}.logo-mark{width:46px;height:46px;border-radius:16px;background:var(--grad);display:grid;place-items:center;color:#080a10;box-shadow:0 0 26px rgba(255,255,255,.16)}.navlinks{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}.navlinks a{padding:10px 13px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:rgba(255,255,255,.045)}.navlinks a:hover{color:#fff;background:rgba(255,255,255,.1)}.hero{padding:54px 0 28px}.panel,.card{position:relative;overflow:hidden;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.115),var(--panel));box-shadow:var(--shadow);border-radius:var(--radius)}.panel{padding:34px}.panel:before,.card:before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:var(--grad)}.kicker{display:inline-flex;padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.065);color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-size:.82rem}h1{font-size:clamp(2.35rem,7vw,5.6rem);line-height:.9;margin:18px 0 14px;letter-spacing:-.05em}h2{font-size:clamp(1.5rem,3.2vw,2.35rem);margin:0 0 8px}h3{font-size:1.28rem;margin:0 0 8px}.rainbow{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}p{color:var(--muted);line-height:1.62}.lead{font-size:1.08rem;max-width:830px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border-radius:16px;border:1px solid var(--line);font-weight:900;background:rgba(255,255,255,.07)}.btn.primary{background:var(--grad);color:#080a10;border:0}.btn:hover{transform:translateY(-2px);box-shadow:0 0 22px rgba(53,217,255,.18)}.section{padding:18px 0 30px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}.card{padding:23px;display:flex;flex-direction:column;min-height:305px}.card p{margin:0 0 16px}.emoji{font-size:2.05rem;margin-bottom:14px}.tag{display:inline-flex;width:max-content;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid var(--line);color:#fff;font-size:.82rem;margin-bottom:12px}.card .buttons{margin-top:auto}.note{margin-top:18px;padding:16px;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--muted);line-height:1.55}.footer{padding:34px 0 42px;text-align:center;color:var(--muted);font-size:.88rem}@media(max-width:900px){.grid{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column}.navlinks{justify-content:flex-start}.panel,.card{padding:20px}.buttons{flex-direction:column}.btn{width:100%}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="logo" href="https://bearicide.github.io/MATTBEARCADE/">
+      <span class="logo-mark">MB</span>
+      <span><span class="rainbow">MATTBEARCADE</span></span>
+    </a>
+    <nav class="navlinks" aria-label="Portal navigation">
+      <a href="https://bearicide.github.io/">Back to Main</a>
+      <a href="#word-games">Word</a>
+      <a href="#slot-games">Slots</a>
+      <a href="#bubble-games">Bubble</a>
+      <a href="https://github.com/bearicide/MATTBEARCADE">Source</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap panel">
+      <span class="kicker">MATTBEAR game portal</span>
+      <h1><span class="rainbow">MATTBEARCADE.</span><br>Games, chaos, buttons.</h1>
+      <p class="lead">A clean launchpad for the MATTBEAR / Bearicide game projects. Each game gets its own lane, its own source link, and a way back to the main MATTBEAR portal, because apparently navigation matters to humans.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://bearicide.github.io/">Back to Main MATTBEAR Portal</a>
+        <a class="btn" href="https://github.com/bearicide/MATTBEARCADE">View MATTBEARCADE Source</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="word-games">
+    <div class="wrap panel">
+      <h2>Word Games</h2>
+      <p>Word-based projects and prototypes.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="emoji">🔤</div>
+          <span class="tag">word / prototype</span>
+          <h3>Wordplay</h3>
+          <p>Earlier WORDPLAY repo and source branch for word-game concepts and experiments.</p>
+          <div class="buttons">
+            <a class="btn primary" href="https://bearicide.github.io/wordplay/">Live Page</a>
+            <a class="btn" href="https://github.com/bearicide/wordplay">Source</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="slot-games">
+    <div class="wrap panel">
+      <h2>Slot Games</h2>
+      <p>Slot-based projects and variants, separated before they breed in the walls.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="emoji">🎰</div>
+          <span class="tag">main slot</span>
+          <h3>Word$lots</h3>
+          <p>Main active Word$lots repo and primary slot-machine ecosystem.</p>
+          <div class="buttons"><a class="btn primary" href="https://bearicide.github.io/wordslots/">Live Page</a><a class="btn" href="https://github.com/bearicide/wordslots">Source</a></div>
+        </article>
+        <article class="card">
+          <div class="emoji">💐</div>
+          <span class="tag">mother's day / mobile</span>
+          <h3>Word$lots Mom Mobile</h3>
+          <p>Mother's Day / mobile-specific Word$lots repo variant.</p>
+          <div class="buttons"><a class="btn primary" href="https://bearicide.github.io/wordslots-mom-mobile/">Live Page</a><a class="btn" href="https://github.com/bearicide/wordslots-mom-mobile">Source</a></div>
+        </article>
+        <article class="card">
+          <div class="emoji">🌹</div>
+          <span class="tag">mother's day</span>
+          <h3>Word$lots Mom</h3>
+          <p>Separate Mother's Day Word$lots repo container.</p>
+          <div class="buttons"><a class="btn primary" href="https://bearicide.github.io/wordslots-mom/">Live Page</a><a class="btn" href="https://github.com/bearicide/wordslots-mom">Source</a></div>
+        </article>
+        <article class="card">
+          <div class="emoji">🐻</div>
+          <span class="tag">alternate slot</span>
+          <h3>MATTBEAR Word$lots</h3>
+          <p>Alternate MATTBEAR Word$lots repo container.</p>
+          <div class="buttons"><a class="btn primary" href="https://bearicide.github.io/mattbear-wordslots/">Live Page</a><a class="btn" href="https://github.com/bearicide/mattbear-wordslots">Source</a></div>
+        </article>
+        <article class="card">
+          <div class="emoji">🏛️</div>
+          <span class="tag">official slot</span>
+          <h3>Word$lots Official</h3>
+          <p>Official Word$lots repo container for future locked builds.</p>
+          <div class="buttons"><a class="btn primary" href="https://bearicide.github.io/wordslots-official/">Live Page</a><a class="btn" href="https://github.com/bearicide/wordslots-official">Source</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="bubble-games">
+    <div class="wrap panel">
+      <h2>Bubble Games</h2>
+      <p>Bubble shooter branch. A non-slot, somehow. Historic restraint.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="emoji">🫧</div>
+          <span class="tag">bubble shooter</span>
+          <h3>Mother's Day Bubble Moovin'!</h3>
+          <p>Bubble shooter / Bust-a-Move-style project repo.</p>
+          <div class="buttons"><a class="btn primary" href="https://bearicide.github.io/bubble/">Live Page</a><a class="btn" href="https://github.com/bearicide/bubble">Source</a></div>
+        </article>
+      </div>
+      <div class="note"><strong>Backlink:</strong> This portal links back to the main MATTBEAR homepage in the top navigation and hero button.</div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer wrap">
+  <a href="https://bearicide.github.io/">Back to Main MATTBEAR Portal</a> · MATTBEARCADE · chaos → signal
+</footer>
+</body>
+</html>
