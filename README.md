@@ -2,6 +2,11 @@
 
 MATTBEARCADE is the umbrella arcade ecosystem for MATTBEAR browser games, experiments, and playable neon machines.
 
+## Back To Main
+
+- Main portal: https://bearicide.github.io/
+- Main repo: https://github.com/bearicide/bearicide.github.io
+
 ## Shared Structure
 
 ```text
