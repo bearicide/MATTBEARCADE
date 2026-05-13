@@ -3,138 +3,31 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>MATTBEARCADE - Working Toys & Games</title>
-<meta name="description" content="MATTBEARCADE: working MATTBEAR browser games, toys, samplers, and arcade experiments." />
+<title>MATTBEARCADE - Verified Working Toys & Games</title>
+<meta name="description" content="MATTBEARCADE: verified working MATTBEAR browser games, samplers, MIDI toys, and weird playable tools." />
 <meta name="theme-color" content="#050510" />
 <style>
-:root{
-  --bg:#050510;--panel:rgba(255,255,255,.075);--panel2:rgba(255,255,255,.115);--text:#f8fbff;--muted:#bcc5dd;--line:rgba(255,255,255,.16);
-  --red:#ff3b3b;--orange:#ff9d2e;--yellow:#fff14f;--green:#47ff8a;--cyan:#35e5ff;--blue:#727cff;--violet:#d45cff;--pink:#ff3df2;
-  --grad:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--cyan),var(--blue),var(--violet),var(--pink));
-  --shadow:0 22px 70px rgba(0,0,0,.46);--radius:26px;
-}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;font-family:Bahnschrift,"Arial Narrow",Arial,sans-serif;color:var(--text);background:radial-gradient(circle at 12% 0%,rgba(255,61,242,.22),transparent 30%),radial-gradient(circle at 88% 8%,rgba(53,229,255,.2),transparent 28%),radial-gradient(circle at 50% 105%,rgba(71,255,138,.13),transparent 34%),linear-gradient(180deg,#050510,#101423 55%,#050510)}
-a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 28px));margin:0 auto}.top{position:sticky;top:0;z-index:20;background:rgba(5,5,16,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:1000;letter-spacing:.06em;text-transform:uppercase}.mark{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;color:#050510;background:var(--grad);box-shadow:0 0 28px rgba(53,229,255,.24)}.rainbow{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}.links{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.links a{padding:9px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.045);color:var(--muted);font:800 .82rem system-ui,sans-serif}.links a:hover{color:#fff;background:rgba(255,255,255,.1)}
-.hero{padding:48px 0 22px}.panel,.card{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,var(--panel2),var(--panel));box-shadow:var(--shadow)}.panel:before,.card:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--grad)}.panel{padding:32px}.kicker{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.06);color:var(--muted);font:900 .78rem system-ui,sans-serif;text-transform:uppercase;letter-spacing:.09em}h1{margin:18px 0 12px;font-size:clamp(2.55rem,8vw,6.7rem);line-height:.86;letter-spacing:-.055em;text-transform:uppercase;text-shadow:0 0 26px rgba(255,61,242,.28)}h2{font-size:clamp(1.5rem,3.2vw,2.35rem);margin:0 0 8px}h3{font-size:1.35rem;margin:0 0 8px}.lead,p{color:var(--muted);line-height:1.55}.lead{font-size:1.08rem;max-width:840px}.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 16px;border-radius:15px;border:1px solid var(--line);background:rgba(255,255,255,.07);font-weight:1000}.btn.primary{background:var(--grad);border:0;color:#050510}.btn:hover{transform:translateY(-2px);filter:saturate(1.1)}.section{padding:16px 0 28px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:14px}.pill{display:inline-flex;width:max-content;padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.07);color:#fff;font:900 .78rem system-ui,sans-serif;text-transform:uppercase}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:22px;min-height:300px;display:flex;flex-direction:column}.emoji{font-size:2.25rem;margin-bottom:12px}.card p{margin:0 0 16px}.card .buttons{margin-top:auto}.meta{display:grid;gap:6px;margin:8px 0 14px}.meta span{font:800 .78rem system-ui,sans-serif;color:#dfe7ff;border:1px solid var(--line);background:rgba(255,255,255,.055);border-radius:12px;padding:7px 9px}.status{color:#050510;background:linear-gradient(90deg,var(--green),var(--cyan));border:0}.note{margin-top:16px;padding:14px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.055);color:var(--muted);font:800 .9rem system-ui,sans-serif;line-height:1.45}.footer{padding:32px 0 42px;text-align:center;color:var(--muted);font:800 .82rem system-ui,sans-serif}.tiny{font-size:.82rem;color:var(--muted)}
-@media(max-width:920px){.nav{align-items:flex-start;flex-direction:column}.links{justify-content:flex-start}.grid{grid-template-columns:1fr}.panel,.card{padding:20px}.buttons{flex-direction:column}.btn{width:100%}.section-head{align-items:flex-start;flex-direction:column}}
+:root{--bg:#050510;--panel:rgba(255,255,255,.075);--panel2:rgba(255,255,255,.115);--text:#f8fbff;--muted:#bcc5dd;--line:rgba(255,255,255,.16);--red:#ff3b3b;--orange:#ff9d2e;--yellow:#fff14f;--green:#47ff8a;--cyan:#35e5ff;--blue:#727cff;--violet:#d45cff;--pink:#ff3df2;--grad:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--cyan),var(--blue),var(--violet),var(--pink));--shadow:0 22px 70px rgba(0,0,0,.46);--radius:26px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;font-family:Bahnschrift,"Arial Narrow",Arial,sans-serif;color:var(--text);background:radial-gradient(circle at 12% 0%,rgba(255,61,242,.22),transparent 30%),radial-gradient(circle at 88% 8%,rgba(53,229,255,.2),transparent 28%),radial-gradient(circle at 50% 105%,rgba(71,255,138,.13),transparent 34%),linear-gradient(180deg,#050510,#101423 55%,#050510)}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 28px));margin:0 auto}.top{position:sticky;top:0;z-index:20;background:rgba(5,5,16,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:1000;letter-spacing:.06em;text-transform:uppercase}.mark{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;color:#050510;background:var(--grad);box-shadow:0 0 28px rgba(53,229,255,.24)}.rainbow{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}.links{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.links a{padding:9px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.045);color:var(--muted);font:800 .82rem system-ui,sans-serif}.links a:hover{color:#fff;background:rgba(255,255,255,.1)}.hero{padding:48px 0 22px}.panel,.card{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,var(--panel2),var(--panel));box-shadow:var(--shadow)}.panel:before,.card:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--grad)}.panel{padding:32px}.kicker{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.06);color:var(--muted);font:900 .78rem system-ui,sans-serif;text-transform:uppercase;letter-spacing:.09em}h1{margin:18px 0 12px;font-size:clamp(2.55rem,8vw,6.7rem);line-height:.86;letter-spacing:-.055em;text-transform:uppercase;text-shadow:0 0 26px rgba(255,61,242,.28)}h2{font-size:clamp(1.5rem,3.2vw,2.35rem);margin:0 0 8px}h3{font-size:1.35rem;margin:0 0 8px}.lead,p{color:var(--muted);line-height:1.55}.lead{font-size:1.08rem;max-width:860px}.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 16px;border-radius:15px;border:1px solid var(--line);background:rgba(255,255,255,.07);font-weight:1000}.btn.primary{background:var(--grad);border:0;color:#050510}.btn:hover{transform:translateY(-2px);filter:saturate(1.1)}.section{padding:16px 0 28px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:14px}.pill{display:inline-flex;width:max-content;padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.07);color:#fff;font:900 .78rem system-ui,sans-serif;text-transform:uppercase}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:22px;min-height:300px;display:flex;flex-direction:column}.emoji{font-size:2.25rem;margin-bottom:12px}.card p{margin:0 0 16px}.card .buttons{margin-top:auto}.meta{display:grid;gap:6px;margin:8px 0 14px}.meta span{font:800 .78rem system-ui,sans-serif;color:#dfe7ff;border:1px solid var(--line);background:rgba(255,255,255,.055);border-radius:12px;padding:7px 9px}.status{color:#050510;background:linear-gradient(90deg,var(--green),var(--cyan));border:0}.note{margin-top:16px;padding:14px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.055);color:var(--muted);font:800 .9rem system-ui,sans-serif;line-height:1.45}.footer{padding:32px 0 42px;text-align:center;color:var(--muted);font:800 .82rem system-ui,sans-serif}@media(max-width:920px){.nav{align-items:flex-start;flex-direction:column}.links{justify-content:flex-start}.grid{grid-template-columns:1fr}.panel,.card{padding:20px}.buttons{flex-direction:column}.btn{width:100%}.section-head{align-items:flex-start;flex-direction:column}}
 </style>
 </head>
 <body>
-<header class="top">
-  <div class="wrap nav">
-    <a class="brand" href="https://bearicide.github.io/MATTBEARCADE/" aria-label="MATTBEARCADE home"><span class="mark">MB</span><span class="rainbow">MATTBEARCADE</span></a>
-    <nav class="links" aria-label="MATTBEARCADE navigation">
-      <a href="https://bearicide.github.io/">Main Portal</a>
-      <a href="#games">Games</a>
-      <a href="#music-toys">Music Toys</a>
-      <a href="#active-builds">Active Builds</a>
-      <a href="https://github.com/bearicide/MATTBEARCADE">Source</a>
-    </nav>
-  </div>
-</header>
-
+<header class="top"><div class="wrap nav"><a class="brand" href="https://bearicide.github.io/MATTBEARCADE/"><span class="mark">MB</span><span class="rainbow">MATTBEARCADE</span></a><nav class="links" aria-label="MATTBEARCADE navigation"><a href="https://bearicide.github.io/">Main Portal</a><a href="#games">Games</a><a href="#music-toys">Music Toys</a><a href="#weird-toys">Weird Toys</a><a href="https://github.com/bearicide/MATTBEARCADE">Source</a></nav></div></header>
 <main>
-  <section class="hero">
-    <div class="wrap panel">
-      <span class="kicker">✅ working toys only · no empty repo graveyard</span>
-      <h1><span class="rainbow">MATTBEARCADE.</span><br>Playable chaos.</h1>
-      <p class="lead">A cleaned-up launchpad for MATTBEAR browser games, music toys, samplers, and experiments that actually have working files behind them. Broken placeholders have been kicked out into the rain, where they can think about what they’ve done.</p>
-      <div class="buttons">
-        <a class="btn primary" href="#games">Play Something</a>
-        <a class="btn" href="#music-toys">Open Music Toys</a>
-        <a class="btn" href="https://bearicide.github.io/">Back to Main MATTBEAR Portal</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="games">
-    <div class="wrap">
-      <div class="section-head"><div><h2>Games</h2><p>Playable browser game builds and arcade-style experiments.</p></div><span class="pill status">verified working lane</span></div>
-      <div class="grid">
-        <article class="card">
-          <div class="emoji">🎰</div><span class="pill">slot / free-play</span>
-          <h3>WORD$LOTS!</h3>
-          <p>Main active slot-machine ecosystem. Free-play only, no real money, with reels, paylines, payouts, and MATTBEAR chaos pretending to be mathematics.</p>
-          <div class="meta"><span>Repo: bearicide/wordslots</span><span>Live: /wordslots/</span></div>
-          <div class="buttons"><a class="btn primary" href="https://bearicide.github.io/wordslots/">Launch</a><a class="btn" href="https://github.com/bearicide/wordslots">Source</a></div>
-        </article>
-        <article class="card">
-          <div class="emoji">🫧</div><span class="pill">bubble shooter</span>
-          <h3>Mother’s Day Bubble Moovin’!</h3>
-          <p>Bubble-shooter launcher with premium, mobile, and classic builds. Bright, loud, playable, and only mildly threatening to browser dignity.</p>
-          <div class="meta"><span>Repo: bearicide/bubble</span><span>Live: /bubble/</span></div>
-          <div class="buttons"><a class="btn primary" href="https://bearicide.github.io/bubble/">Launch</a><a class="btn" href="https://github.com/bearicide/bubble">Source</a></div>
-        </article>
-        <article class="card">
-          <div class="emoji">🔤</div><span class="pill">word / prototype</span>
-          <h3>WORDPLAY</h3>
-          <p>Word-game concept branch and prototype space for word mechanics, quote/aphorism toys, and language-based weirdness.</p>
-          <div class="meta"><span>Repo: bearicide/wordplay</span><span>Live: /wordplay/</span></div>
-          <div class="buttons"><a class="btn primary" href="https://bearicide.github.io/wordplay/">Launch</a><a class="btn" href="https://github.com/bearicide/wordplay">Source</a></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="music-toys">
-    <div class="wrap">
-      <div class="section-head"><div><h2>Music Toys</h2><p>Samplers, MIDI toys, and browser instruments. The fun part, obviously.</p></div><span class="pill status">audio / midi lane</span></div>
-      <div class="grid">
-        <article class="card">
-          <div class="emoji">🎛️</div><span class="pill">sampler / midi</span>
-          <h3>The Sampla</h3>
-          <p>Pad-based browser sampler with generated drum banks, Launchkey Mini mapping, MIDI listen mode, keyboard triggers, and PWA hooks.</p>
-          <div class="meta"><span>Repo: bearicide/the-sampla</span><span>Live: /the-sampla/</span></div>
-          <div class="buttons"><a class="btn primary" href="https://bearicide.github.io/the-sampla/">Launch</a><a class="btn" href="https://github.com/bearicide/the-sampla">Source</a></div>
-        </article>
-        <article class="card">
-          <div class="emoji">🎹</div><span class="pill">midi / machine</span>
-          <h3>Matt’s MIDI Machine</h3>
-          <p>Controller-focused music toy space for Launchkey-style interaction, pads, and performance experiments.</p>
-          <div class="meta"><span>Repo: bearicide/matts-midi-machine</span><span>Live: /matts-midi-machine/</span></div>
-          <div class="buttons"><a class="btn primary" href="https://bearicide.github.io/matts-midi-machine/">Launch</a><a class="btn" href="https://github.com/bearicide/matts-midi-machine">Source</a></div>
-        </article>
-        <article class="card">
-          <div class="emoji">🌀</div><span class="pill">ritual / audio toy</span>
-          <h3>NEONRITUAL</h3>
-          <p>Older-cousin neon ritual machine lane. Kept because it has real project weight and belongs in the toy box, not the junk drawer.</p>
-          <div class="meta"><span>Repo: bearicide/NEONRITUAL</span><span>Live: /NEONRITUAL/</span></div>
-          <div class="buttons"><a class="btn primary" href="https://bearicide.github.io/NEONRITUAL/">Launch</a><a class="btn" href="https://github.com/bearicide/NEONRITUAL">Source</a></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="active-builds">
-    <div class="wrap">
-      <div class="section-head"><div><h2>Active Builds / Useful Weird Stuff</h2><p>Not always classic arcade games, but they are real working project branches worth keeping visible.</p></div><span class="pill">curated</span></div>
-      <div class="grid">
-        <article class="card">
-          <div class="emoji">⬇️</div><span class="pill">album / game branch</span>
-          <h3>MATTBEAR All Fall Down</h3>
-          <p>All Fall Down project branch with enough actual repo mass to keep in the active ecosystem.</p>
-          <div class="meta"><span>Repo: bearicide/mattbear-allfalldown</span><span>Live: /mattbear-allfalldown/</span></div>
-          <div class="buttons"><a class="btn primary" href="https://bearicide.github.io/mattbear-allfalldown/">Launch</a><a class="btn" href="https://github.com/bearicide/mattbear-allfalldown">Source</a></div>
-        </article>
-        <article class="card">
-          <div class="emoji">🐣</div><span class="pill">seasonal / game page</span>
-          <h3>Easter 2026</h3>
-          <p>Seasonal game/event project branch with active web content and game-area potential.</p>
-          <div class="meta"><span>Repo: bearicide/easter2026</span><span>Live: /easter2026/</span></div>
-          <div class="buttons"><a class="btn primary" href="https://bearicide.github.io/easter2026/">Launch</a><a class="btn" href="https://github.com/bearicide/easter2026">Source</a></div>
-        </article>
-        <article class="card">
-          <div class="emoji">🔪</div><span class="pill">toy / oddity</span>
-          <h3>The Choppa</h3>
-          <p>Small but real weird-toy branch. Kept because the arcade should have strange corners, not just sensible buttons like a bank website.</p>
-          <div class="meta"><span>Repo: bearicide/the-choppa</span><span>Live: /the-choppa/</span></div>
-          <div class="buttons"><a class="btn primary" href="https://bearicide.github.io/the-choppa/">Launch</a><a class="btn" href="https://github.com/bearicide/the-choppa">Source</a></div>
-        </article>
-      </div>
-      <div class="note"><strong>Cut list:</strong> empty placeholder repos are intentionally not shown here. MATTBEARCADE should be a working cabinet, not a museum of broken doors.</div>
-    </div>
-  </section>
+<section class="hero"><div class="wrap panel"><span class="kicker">✅ verified index.html only · no repo graveyard</span><h1><span class="rainbow">MATTBEARCADE.</span><br>Playable chaos.</h1><p class="lead">Clean launchpad for MATTBEAR browser games, music toys, samplers, and playable weird tools. This pass only includes projects where the repo was checked for an actual working <code>index.html</code>. The unverified stuff got thrown into the digital alley, where broken links belong.</p><div class="buttons"><a class="btn primary" href="#games">Play Games</a><a class="btn" href="#music-toys">Open Music Toys</a><a class="btn" href="https://bearicide.github.io/">Back to Main Portal</a></div></div></section>
+<section class="section" id="games"><div class="wrap"><div class="section-head"><div><h2>Games</h2><p>Playable browser game builds and arcade-style experiments.</p></div><span class="pill status">verified working lane</span></div><div class="grid">
+<article class="card"><div class="emoji">🎰</div><span class="pill">slot / free-play</span><h3>WORD$LOTS!</h3><p>Main active slot-machine ecosystem. Free-play only, no real money, with reels, paylines, payouts, and MATTBEAR chaos pretending to be mathematics.</p><div class="meta"><span>Repo: bearicide/wordslots</span><span>Verified: index.html exists</span></div><div class="buttons"><a class="btn primary" href="https://bearicide.github.io/wordslots/">Launch</a><a class="btn" href="https://github.com/bearicide/wordslots">Source</a></div></article>
+<article class="card"><div class="emoji">🫧</div><span class="pill">bubble shooter</span><h3>Mother’s Day Bubble Moovin’!</h3><p>Bubble-shooter launcher with premium, mobile, and classic builds. Bright, loud, playable, and only mildly threatening to browser dignity.</p><div class="meta"><span>Repo: bearicide/bubble</span><span>Verified: index.html exists</span></div><div class="buttons"><a class="btn primary" href="https://bearicide.github.io/bubble/">Launch</a><a class="btn" href="https://github.com/bearicide/bubble">Source</a></div></article>
+<article class="card"><div class="emoji">🔤</div><span class="pill">word / prototype</span><h3>WORDPLAY</h3><p>Word-game concept branch and prototype space for word mechanics, quote/aphorism toys, and language-based weirdness.</p><div class="meta"><span>Repo: bearicide/wordplay</span><span>Verified: index.html exists</span></div><div class="buttons"><a class="btn primary" href="https://bearicide.github.io/wordplay/">Launch</a><a class="btn" href="https://github.com/bearicide/wordplay">Source</a></div></article>
+</div></div></section>
+<section class="section" id="music-toys"><div class="wrap"><div class="section-head"><div><h2>Music Toys</h2><p>Samplers, MIDI toys, browser instruments, and controller experiments.</p></div><span class="pill status">audio / midi lane</span></div><div class="grid">
+<article class="card"><div class="emoji">🎛️</div><span class="pill">sampler / midi</span><h3>The Sampla</h3><p>Pad-based browser sampler with generated drum banks, Launchkey Mini mapping, MIDI listen mode, keyboard triggers, and PWA hooks.</p><div class="meta"><span>Repo: bearicide/the-sampla</span><span>Verified: index.html exists</span></div><div class="buttons"><a class="btn primary" href="https://bearicide.github.io/the-sampla/">Launch</a><a class="btn" href="https://github.com/bearicide/the-sampla">Source</a></div></article>
+<article class="card"><div class="emoji">🎹</div><span class="pill">midi / machine</span><h3>Matt’s MIDI Machine</h3><p>Controller-focused music toy for Launchkey-style interaction, pads, knobs, keyboard, WebMIDI, and browser audio.</p><div class="meta"><span>Repo: bearicide/matts-midi-machine</span><span>Verified: index.html exists</span></div><div class="buttons"><a class="btn primary" href="https://bearicide.github.io/matts-midi-machine/">Launch</a><a class="btn" href="https://github.com/bearicide/matts-midi-machine">Source</a></div></article>
+<article class="card"><div class="emoji">🌀</div><span class="pill">ritual / audio toy</span><h3>NEONRITUAL</h3><p>Full-screen neon audio/visual ritual machine with MIDI-style controls, knobs, pads, and canvas weirdness.</p><div class="meta"><span>Repo: bearicide/NEONRITUAL</span><span>Verified: index.html exists</span></div><div class="buttons"><a class="btn primary" href="https://bearicide.github.io/NEONRITUAL/">Launch</a><a class="btn" href="https://github.com/bearicide/NEONRITUAL">Source</a></div></article>
+</div></div></section>
+<section class="section" id="weird-toys"><div class="wrap"><div class="section-head"><div><h2>Weird Toys</h2><p>Playable tools that are not exactly games, because normal categories are where imagination goes to file taxes.</p></div><span class="pill status">verified oddities</span></div><div class="grid">
+<article class="card"><div class="emoji">🔪</div><span class="pill">auto-chop drummer</span><h3>The Choppa</h3><p>Auto-chop loop drummer with loop loading, pads, keyboard sample bank, MIDI/pad mapping, waveform view, and PWA/mobile polish.</p><div class="meta"><span>Repo: bearicide/the-choppa</span><span>Verified: index.html exists</span></div><div class="buttons"><a class="btn primary" href="https://bearicide.github.io/the-choppa/">Launch</a><a class="btn" href="https://github.com/bearicide/the-choppa">Source</a></div></article>
+</div><div class="note"><strong>Removed on this check:</strong> unverified active-build links like All Fall Down and Easter 2026. They can come back after their live/index status is verified. No broken-cabinet arcade, no mercy.</div></div></section>
 </main>
-<footer class="footer wrap"><a href="https://bearicide.github.io/">Back to Main MATTBEAR Portal</a> · MATTBEARCADE · chaos → signal · working toys only</footer>
+<footer class="footer wrap"><a href="https://bearicide.github.io/">Back to Main MATTBEAR Portal</a> · MATTBEARCADE · chaos → signal · verified working toys only</footer>
 </body>
 </html>
