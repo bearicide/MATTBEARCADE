@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="MATTBEARCADE icon">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ff3b3b"/>
+      <stop offset="0.18" stop-color="#ff9d2e"/>
+      <stop offset="0.34" stop-color="#fff14f"/>
+      <stop offset="0.5" stop-color="#47ff8a"/>
+      <stop offset="0.66" stop-color="#35e5ff"/>
+      <stop offset="0.82" stop-color="#727cff"/>
+      <stop offset="1" stop-color="#ff3df2"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#050510"/>
+  <rect x="28" y="28" width="456" height="456" rx="92" fill="none" stroke="url(#g)" stroke-width="22" filter="url(#glow)"/>
+  <circle cx="166" cy="172" r="58" fill="#050510" stroke="url(#g)" stroke-width="18"/>
+  <circle cx="346" cy="172" r="58" fill="#050510" stroke="url(#g)" stroke-width="18"/>
+  <path d="M128 246c0-86 256-86 256 0v88c0 76-56 126-128 126s-128-50-128-126z" fill="#111728" stroke="url(#g)" stroke-width="18"/>
+  <circle cx="214" cy="316" r="18" fill="#35e5ff"/>
+  <circle cx="298" cy="316" r="18" fill="#ff3df2"/>
+  <path d="M222 374c20 18 48 18 68 0" fill="none" stroke="#fff14f" stroke-width="16" stroke-linecap="round"/>
+  <text x="256" y="118" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-size="64" font-weight="900" fill="#ffffff">MB</text>
+</svg>
