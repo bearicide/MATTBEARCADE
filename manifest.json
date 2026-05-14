@@ -1,1 +1,19 @@
-{"name":"MATTBEARCADE","short_name":"MBARCADE","start_url":"./","display":"standalone","background_color":"#050510","theme_color":"#050510","description":"MATTBEAR arcade hub for games, music toys, and weird browser machines.","icons":[]}
+{
+  "name": "MATTBEARCADE",
+  "short_name": "MBARCADE",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#050510",
+  "theme_color": "#050510",
+  "description": "MATTBEAR arcade hub for games, music toys, and weird browser machines.",
+  "icons": [
+    {
+      "src": "assets/icons/mattbearcade-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
