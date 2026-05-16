@@ -1,13 +1,13 @@
 {
-  "name": "MATTBEARCADE",
-  "short_name": "MBARCADE",
+  "name": "Mattbearcade",
+  "short_name": "Mattbear",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#050510",
   "theme_color": "#050510",
-  "description": "MATTBEAR arcade hub for games, music toys, and weird browser machines.",
+  "description": "Mattbear arcade hub for games, music toys, and weird browser machines.",
   "icons": [
     {
       "src": "assets/icons/mattbearcade-icon.svg",
