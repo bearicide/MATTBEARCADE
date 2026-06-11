@@ -1,61 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mattbearcade | Neon Browser Arcade</title>
-<meta name="description" content="Mattbearcade is a neon browser arcade hub for Mattbear games, music toys, interactive machines, and playable web experiments." />
-<meta name="theme-color" content="#050510" />
-<link rel="manifest" href="manifest.json" />
-<link rel="icon" href="assets/icons/mattbearcade-icon.svg" type="image/svg+xml" />
-<link rel="stylesheet" href="style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>MATTBEARCADE | Arcade District</title>
+<meta name="description" content="MATTBEARCADE is the modern arcade district for MATTBEAR games, playable web machines, music toys, and active browser experiments.">
+<meta name="theme-color" content="#050509">
+<meta property="og:title" content="MATTBEARCADE | Arcade District">
+<meta property="og:description" content="Modern arcade hub for MATTBEAR games, music toys, and interactive browser machines.">
+<meta property="og:type" content="website">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/mattbearcade-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="crt" aria-hidden="true"></div>
+<div class="ambient" aria-hidden="true"></div>
 <header class="topbar">
-  <a class="brand" href="./" aria-label="Mattbearcade Home"><span class="bear">MB</span><span class="rainbow">Mattbearcade</span></a>
+  <a class="brand" href="./" aria-label="MATTBEARCADE home">
+    <span class="mark">MB</span>
+    <span><b>MATTBEARCADE</b><small>Modern arcade district</small></span>
+  </a>
   <nav aria-label="Main navigation">
-    <a href="https://bearicide.github.io/">Main</a><a href="https://bearicide.github.io/MATTBEARCADE/">Mattbearcade</a><a href="https://bearicide.github.io/retrocade-/">Retrocade</a><a href="https://bearicide.github.io/bubble/">Bubble</a><a href="https://bearicide.github.io/NEONRITUAL/">Neon Ritual</a>
+    <a href="https://bearicide.github.io/">Main</a>
+    <a href="#launch">Launch</a>
+    <a href="#district">District</a>
+    <a href="https://bearicide.github.io/retrocade-/">Retrocade</a>
+    <a href="https://github.com/bearicide/MATTBEARCADE">Source</a>
   </nav>
 </header>
 <main>
   <section class="hero panel">
-    <p class="tag">Neon browser arcade · playable web machines</p>
-    <h1><span class="rainbow">Mattbearcade</span><br>Open the arcade.</h1>
-    <p class="lead">A clean hub for verified Mattbear games, music toys, and interactive browser machines. Built for quick launches, mobile play, and future shared arcade systems.</p>
-    <div class="stats" aria-label="Arcade save data">
-      <button id="coinBtn" class="coin" type="button">Insert Coin</button>
-      <span>Tickets: <strong id="tickets">0</strong></span>
-      <span>Visits: <strong id="visits">1</strong></span>
+    <div class="hero-copy">
+      <p class="eyebrow">Games · tools · web machines · active builds</p>
+      <h1><span>MATTBEAR</span><br>CADE</h1>
+      <p class="lead">The arcade side of the MATTBEAR ecosystem: fast launch buttons, cabinet status, mobile-first play paths, and a cleaner split between modern experiments and Retrocade preservation.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#launch">Open launcher</a>
+        <a class="btn" href="https://bearicide.github.io/retrocade-/">Classic Retrocade</a>
+        <button id="coinBtn" class="coin" type="button">Insert coin</button>
+      </div>
     </div>
-    <div class="actions"><a class="btn primary" href="#games">Play</a><a class="btn" href="https://bearicide.github.io/retrocade-/">Retrocade</a><a class="btn" href="https://github.com/bearicide/MATTBEARCADE">Source</a></div>
+    <aside class="scorebox" aria-label="Local arcade save data">
+      <span>Tickets <strong id="tickets">0</strong></span>
+      <span>Visits <strong id="visits">1</strong></span>
+      <span>Build <strong>v1.2.0</strong></span>
+    </aside>
   </section>
-  <section id="games" class="section">
-    <div class="section-title"><h2>Games</h2><p>Priority cabinets and active builds.</p></div>
-    <div class="grid">
-      <article class="cabinet hot"><span>🕹️</span><h3>Retrocade</h3><p>Classic multi-cabinet arcade shell with persistent coins, tickets, mobile controls, and retro HTML5 chaos.</p><a class="btn primary" href="https://bearicide.github.io/retrocade-/">Launch</a></article>
-      <article class="cabinet"><span>🫧</span><h3>Bubble Moovin’</h3><p>Mother’s Day bubble shooter branch with bright arcade color, mobile-first play, and family-friendly polish.</p><a class="btn primary" href="https://bearicide.github.io/bubble/">Launch</a></article>
-      <article class="cabinet"><span>🧩</span><h3>Interactive Builds</h3><p>Safe arcade-adjacent experiments, puzzle systems, small web games, and playful browser demos.</p><a class="btn primary" href="https://bearicide.github.io/examples/#games">Explore</a></article>
+
+  <section id="launch" class="section">
+    <div class="section-title">
+      <div>
+        <p class="eyebrow">Launch desk</p>
+        <h2>Cabinets first. Explanations second.</h2>
+      </div>
+      <div class="filters" aria-label="Launcher filters">
+        <button class="filter active" type="button" data-filter="all">All</button>
+        <button class="filter" type="button" data-filter="game">Games</button>
+        <button class="filter" type="button" data-filter="music">Music</button>
+        <button class="filter" type="button" data-filter="system">System</button>
+      </div>
+    </div>
+    <div class="grid launcher" id="launcherGrid">
+      <article class="cabinet hot" data-kind="game" data-status="live">
+        <div class="cabinet-top"><span class="emoji">🕹️</span><span class="status live">Live</span></div>
+        <h3>RETROCADE</h3>
+        <p>Classic multi-cabinet preservation room. Snake, Breakout, Pong, Invaders, Asteroids, tickets, coins, and mobile control work.</p>
+        <a class="btn primary launch-link" href="https://bearicide.github.io/retrocade-/">Launch Retrocade</a>
+      </article>
+      <article class="cabinet" data-kind="game" data-status="live">
+        <div class="cabinet-top"><span class="emoji">🫧</span><span class="status live">Live</span></div>
+        <h3>Bubble Moovin’</h3>
+        <p>Bright bubble shooter branch. Simple, touch-friendly, and not currently trying to become a philosophy department.</p>
+        <a class="btn primary launch-link" href="https://bearicide.github.io/bubble/">Launch Bubble</a>
+      </article>
+      <article class="cabinet" data-kind="game" data-status="showcase">
+        <div class="cabinet-top"><span class="emoji">🧩</span><span class="status">Showcase</span></div>
+        <h3>Interactive Builds</h3>
+        <p>Puzzles, demos, client-style experiments, and playable prototypes from the broader examples district.</p>
+        <a class="btn primary launch-link" href="https://bearicide.github.io/examples/#games">Explore Builds</a>
+      </article>
+      <article class="cabinet" data-kind="music" data-status="active">
+        <div class="cabinet-top"><span class="emoji">✂️</span><span class="status active-dev">Active</span></div>
+        <h3>The Choppa</h3>
+        <p>Sampler/control surface direction: pads, MIDI, loops, HOSSilator energy, and less browser junk where possible. A noble dream, apparently.</p>
+        <a class="btn primary launch-link" href="https://bearicide.github.io/the-choppa/">Launch Choppa</a>
+      </article>
+      <article class="cabinet" data-kind="music" data-status="active">
+        <div class="cabinet-top"><span class="emoji">🎹</span><span class="status active-dev">Active</span></div>
+        <h3>MIDI Machine</h3>
+        <p>Controller-focused browser audio work for pads, knobs, WebMIDI experiments, and future shared arcade audio behavior.</p>
+        <a class="btn primary launch-link" href="https://bearicide.github.io/matts-midi-machine/">Launch MIDI</a>
+      </article>
+      <article class="cabinet" data-kind="system" data-status="visual">
+        <div class="cabinet-top"><span class="emoji">🌀</span><span class="status">Visual</span></div>
+        <h3>Neon Ritual</h3>
+        <p>Visual/audio ritual machine. Kept as a high-energy system reference, not the entire personality of the arcade. Growth. Stunning.</p>
+        <a class="btn primary launch-link" href="https://bearicide.github.io/NEONRITUAL/">Launch Ritual</a>
+      </article>
     </div>
   </section>
-  <section id="music" class="section">
-    <div class="section-title"><h2>Music Toys</h2><p>Browser instruments and MIDI-friendly machines.</p></div>
-    <div class="grid">
-      <article class="cabinet"><span>🎛️</span><h3>The Sampla</h3><p>Pad sampler with Launchkey-friendly thinking, banks, keyboard control, and PWA hooks.</p><a class="btn primary" href="https://bearicide.github.io/the-sampla/">Launch</a></article>
-      <article class="cabinet"><span>🎹</span><h3>MIDI Machine</h3><p>Controller-focused toy for pads, knobs, WebMIDI, and browser-audio experiments.</p><a class="btn primary" href="https://bearicide.github.io/matts-midi-machine/">Launch</a></article>
-      <article class="cabinet"><span>🌀</span><h3>Neon Ritual</h3><p>Full-screen neon audio/visual ritual machine with Mattbear signal-noise energy.</p><a class="btn primary" href="https://bearicide.github.io/NEONRITUAL/">Launch</a></article>
+
+  <section id="district" class="section split">
+    <div class="panel copy-panel">
+      <p class="eyebrow">District job</p>
+      <h2>What MATTBEARCADE is now</h2>
+      <p>MATTBEARCADE is the modern playable district. RETROCADE handles classic preservation. Music toys stay connected because pads, rhythm, browser audio, and arcade UX are obviously cousins, despite humanity needing a whole paragraph to admit that.</p>
+    </div>
+    <div class="panel checklist">
+      <h2>Focus stack</h2>
+      <ul>
+        <li><b>Now:</b> launcher clarity, mobile readability, cabinet status.</li>
+        <li><b>Next:</b> preview art, unified cabinet cards, shared sounds.</li>
+        <li><b>Later:</b> accountless save layer, achievements, cabinet routing.</li>
+      </ul>
     </div>
   </section>
-  <section id="status" class="section panel small">
-    <h2>Status</h2>
-    <ul>
-      <li>Build: Mattbearcade v1.1.5 de-slot cleanup</li>
-      <li>Release note: removed public slot and WORDPLAY links while preserving arcade/music direction</li>
-      <li>Next pass: cabinet preview images, shared audio shell, asset-folder wiring</li>
-    </ul>
+
+  <section id="status" class="section panel status-panel">
+    <p class="eyebrow">Current pass</p>
+    <h2>Focus build v1.2.0</h2>
+    <div class="status-grid">
+      <div><b>Cleaned</b><span>Arcade-first copy and structure.</span></div>
+      <div><b>Separated</b><span>Modern arcade vs. Retrocade preservation.</span></div>
+      <div><b>Added</b><span>Filterable launcher and launch logging.</span></div>
+      <div><b>Queued</b><span>Cabinet previews, sounds, asset wiring.</span></div>
+    </div>
+    <p id="launchLog" class="logline">No cabinet launched this session.</p>
   </section>
 </main>
-<footer><a href="https://bearicide.github.io/">MATTBEAR // Always evolving. Kill the Static. // bearicide.github.io</a> · <a href="https://bearicide.github.io/MATTBEARCADE/">Mattbearcade</a> · <a href="https://bearicide.github.io/retrocade-/">Retrocade</a> · <a href="https://bearicide.github.io/bubble/">Bubble</a> · <a href="https://bearicide.github.io/NEONRITUAL/">Neon Ritual</a> · <a href="https://github.com/bearicide/MATTBEARCADE">Source</a></footer>
+<footer>
+  <a href="https://bearicide.github.io/">MATTBEAR</a>
+  <span>·</span>
+  <a href="https://bearicide.github.io/MATTBEARCADE/">MATTBEARCADE</a>
+  <span>·</span>
+  <a href="https://bearicide.github.io/retrocade-/">RETROCADE</a>
+  <span>·</span>
+  <a href="https://github.com/bearicide/MATTBEARCADE">Source</a>
+</footer>
 <script src="app.js"></script>
 <script src="https://bearicide.github.io/assets/js/mattbear-connected.js" defer></script>
 </body>
