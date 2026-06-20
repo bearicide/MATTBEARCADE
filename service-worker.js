@@ -1,9 +1,7 @@
-const CACHE='mbarcade-v2-0-console';
+const CACHE='mbarcade-v2-1-city-map';
 const ASSETS=[
   './',
   './index.html',
-  './style.css',
-  './app.js',
   './manifest.json',
   './assets/icons/mattbearcade-icon.svg'
 ];
