@@ -1,4 +1,4 @@
-const CACHE='mbarcade-v2-1-city-map';
+const CACHE='mbarcade-v3-focused-landing';
 const ASSETS=[
   './',
   './index.html',
